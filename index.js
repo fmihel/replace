@@ -1,5 +1,5 @@
 const path = require('path');
-const replace = require('./source/replace');
+const replace = require('./replace');
 
 const args = process.argv.slice(2);
 const configFileName = args[0] || path.join(__dirname, '../../replace.config.json');
