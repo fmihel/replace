@@ -4,11 +4,11 @@
   "description": "batch modify files by pattern",
   "main": "index.js",
   "scripts": {
-    "test": "node ./test/server",
     "git-push": "git push origin main && git push origin --tags",
-    "npm-publish-patch": "npm run build && npm version patch && npm publish && npm run git-push",
-    "npm-publish-minor": "npm run build && npm version minor && npm publish && npm run git-push",
-    "npm-publish-major": "npm run build && npm version major && npm publish && npm run git-push"  },
+    "npm-publish-patch": "npm version patch && npm publish && npm run git-push",
+    "npm-publish-minor": "npm version minor && npm publish && npm run git-push",
+    "npm-publish-major": "npm version major && npm publish && npm run git-push"  
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fmihel/replace.git"
