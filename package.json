@@ -1,0 +1,38 @@
+{
+  "name": "fmihel-replace",
+  "version": "0.0.1",
+  "description": "batch modify files by pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/server",
+    "git-push": "git push origin main && git push origin --tags",
+    "npm-publish-patch": "npm run build && npm version patch && npm publish && npm run git-push",
+    "npm-publish-minor": "npm run build && npm version minor && npm publish && npm run git-push",
+    "npm-publish-major": "npm run build && npm version major && npm publish && npm run git-push"  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmihel/replace.git"
+  },
+  "keywords": [
+    "file",
+    "replace",
+    "javascript",
+    "nodeJS"
+  ],
+  "author": "fmihel76@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fmihel/replace/issues"
+  },
+  "homepage": "https://github.com/fmihel/replace#readme",
+
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-import-resolver-webpack": "^0.13.2",
+    "eslint-plugin-import": "^2.26.0",
+    "exports-loader": "^4.0.0"
+  }
+
+
+}
